@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduLearn - Website Wireframes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        .wireframe {
+            border: 2px solid #ddd;
+            margin: 20px 0;
+            padding: 20px;
+            background: #fafafa;
+        }
+        .wireframe h3 {
+            color: #3498db;
+            margin-top: 0;
+        }
+        .layout-box {
+            border: 1px solid #999;
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            text-align: center;
+            color: #666;
+        }
+        .header-box {
+            background: #2c3e50;
+            color: white;
+            padding: 15px;
+        }
+        .nav-box {
+            background: #34495e;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .hero-box {
+            background: #3498db;
+            color: white;
+            padding: 40px;
+            font-size: 18px;
+        }
+        .content-box {
+            background: #ecf0f1;
+            padding: 20px;
+            margin: 10px 0;
+        }
+        .sidebar-box {
+            background: #bdc3c7;
+            padding: 15px;
+            width: 30%;
+            float: right;
+        }
+        .footer-box {
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            clear: both;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            margin: 10px 0;
+        }
+        .grid-item {
+            background: #e8f4fd;
+            padding: 15px;
+            border: 1px solid #3498db;
+        }
+        .form-box {
+            background: #f8f9fa;
+            padding: 20px;
+            border: 1px solid #dee2e6;
+        }
+        .form-field {
+            background: white;
+            border: 1px solid #ced4da;
+            padding: 8px;
+            margin: 5px 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>EduLearn Website Wireframes</h1>
+        <p style="text-align: center; color: #666;">Visual mockups showing the layout and structure of each page</p>
+
+        <!-- Homepage Wireframe -->
+        <div class="wireframe">
+            <h3>Homepage (index.html)</h3>
+            <div class="header-box">EduLearn Logo</div>
+            <div class="nav-box">
+                <span>Home</span>
+                <span>About</span>
+                <span>Courses</span>
+                <span>Gallery</span>
+                <span>Contact</span>
+            </div>
+            <div class="hero-box">
+                Image Slider<br>
+                [Slide 1] [Slide 2] [Slide 3]<br>
+                ← Navigation Arrows →<br>
+                ● ○ ○ Dots
+            </div>
+            <div class="content-box">
+                <h4>Welcome Section</h4>
+                <div class="grid">
+                    <div class="grid-item">Expert Instructors</div>
+                    <div class="grid-item">Flexible Schedule</div>
+                    <div class="grid-item">Interactive Content</div>
+                </div>
+            </div>
+            <div class="content-box" style="background: #3498db; color: white; text-align: center;">
+                Call to Action Section<br>
+                [Browse Courses] [External Link]
+            </div>
+            <div class="footer-box">Footer with Contact Info & Links</div>
+        </div>
+
+        <!-- About Page Wireframe -->
+        <div class="wireframe">
+            <h3>About Page (about.html)</h3>
+            <div class="header-box">EduLearn Logo</div>
+            <div class="nav-box">
+                <span>Home</span>
+                <span style="background: #3498db;">About</span>
+                <span>Courses</span>
+                <span>Gallery</span>
+                <span>Contact</span>
+            </div>
+            <div class="hero-box">Page Header: About EduLearn</div>
+            <div class="content-box">
+                <h4>Our Mission</h4>
+                <p>Mission statement content...</p>
+            </div>
+            <div class="content-box">
+                <h4>Core Values</h4>
+                <div class="grid">
+                    <div class="grid-item">Accessibility</div>
+                    <div class="grid-item">Quality</div>
+                    <div class="grid-item">Innovation</div>
+                    <div class="grid-item">Community</div>
+                </div>
+            </div>
+            <div class="content-box">
+                <h4>Statistics Table</h4>
+                <table style="width: 100%; border-collapse: collapse;">
+                    <tr style="background: #34495e; color: white;">
+                        <th style="border: 1px solid #ddd; padding: 8px;">Metric</th>
+                        <th style="border: 1px solid #ddd; padding: 8px;">2022</th>
+                        <th style="border: 1px solid #ddd; padding: 8px;">2023</th>
+                        <th style="border: 1px solid #ddd; padding: 8px;">2024</th>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ddd; padding: 8px;">Students</td>
+                        <td style="border: 1px solid #ddd; padding: 8px;">15,000</td>
+                        <td style="border: 1px solid #ddd; padding: 8px;">28,500</td>
+                        <td style="border: 1px solid #ddd; padding: 8px;">45,200</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="footer-box">Footer with Contact Info & Links</div>
+        </div>
+
+        <!-- Courses Page Wireframe -->
+        <div class="wireframe">
+            <h3>Courses Page (courses.html)</h3>
+            <div class="header-box">EduLearn Logo</div>
+            <div class="nav-box">
+                <span>Home</span>
+                <span>About</span>
+                <span style="background: #3498db;">Courses</span>
+                <span>Gallery</span>
+                <span>Contact</span>
+            </div>
+            <div class="hero-box">Page Header: Our Courses</div>
+            <div class="content-box">
+                <h4>Course Categories</h4>
+                <div class="grid">
+                    <div class="grid-item">Technology</div>
+                    <div class="grid-item">Business</div>
+                    <div class="grid-item">Creative Arts</div>
+                    <div class="grid-item">Personal Development</div>
+                </div>
+            </div>
+            <div class="content-box">
+                <h4>Featured Courses Table</h4>
+                <table style="width: 100%; border-collapse: collapse; font-size: 12px;">
+                    <tr style="background: #34495e; color: white;">
+                        <th style="border: 1px solid #ddd; padding: 5px;">Course</th>
+                        <th style="border: 1px solid #ddd; padding: 5px;">Category</th>
+                        <th style="border: 1px solid #ddd; padding: 5px;">Duration</th>
+                        <th style="border: 1px solid #ddd; padding: 5px;">Level</th>
+                        <th style="border: 1px solid #ddd; padding: 5px;">Price</th>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ddd; padding: 5px;">Web Development</td>
+                        <td style="border: 1px solid #ddd; padding: 5px;">Technology</td>
+                        <td style="border: 1px solid #ddd; padding: 5px;">12 weeks</td>
+                        <td style="border: 1px solid #ddd; padding: 5px;">Beginner</td>
+                        <td style="border: 1px solid #ddd; padding: 5px;">$299</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="footer-box">Footer with Contact Info & Links</div>
+        </div>
+
+        <!-- Gallery Page Wireframe -->
+        <div class="wireframe">
+            <h3>Gallery Page (gallery.html)</h3>
+            <div class="header-box">EduLearn Logo</div>
+            <div class="nav-box">
+                <span>Home</span>
+                <span>About</span>
+                <span>Courses</span>
+                <span style="background: #3498db;">Gallery</span>
+                <span>Contact</span>
+            </div>
+            <div class="hero-box">Page Header: Gallery</div>
+            <div class="content-box">
+                <h4>Image Gallery Grid</h4>
+                <div class="grid">
+                    <div class="grid-item">📷 Virtual Classroom<br><small>Click to enlarge</small></div>
+                    <div class="grid-item">📷 Study Groups<br><small>Click to enlarge</small></div>
+                    <div class="grid-item">📷 Coding Workshop<br><small>Click to enlarge</small></div>
+                    <div class="grid-item">📷 Graduation<br><small>Click to enlarge</small></div>
+                    <div class="grid-item">📷 Design Studio<br><small>Click to enlarge</small></div>
+                    <div class="grid-item">📷 Business Seminar<br><small>Click to enlarge</small></div>
+                    <div class="grid-item">📷 Success Stories<br><small>Click to enlarge</small></div>
+                    <div class="grid-item">📷 Tech Lab<br><small>Click to enlarge</small></div>
+                </div>
+            </div>
+            <div class="content-box" style="border: 2px dashed #3498db;">
+                Modal Overlay (appears when image clicked)<br>
+                [X] Close Button<br>
+                [Large Image]<br>
+                Image Title & Description
+            </div>
+            <div class="footer-box">Footer with Contact Info & Links</div>
+        </div>
+
+        <!-- Contact Page Wireframe -->
+        <div class="wireframe">
+            <h3>Contact Page (contact.html)</h3>
+            <div class="header-box">EduLearn Logo</div>
+            <div class="nav-box">
+                <span>Home</span>
+                <span>About</span>
+                <span>Courses</span>
+                <span>Gallery</span>
+                <span style="background: #3498db;">Contact</span>
+            </div>
+            <div class="hero-box">Page Header: Contact Us</div>
+            <div class="clearfix">
+                <div style="width: 65%; float: left;">
+                    <div class="form-box">
+                        <h4>Contact Form</h4>
+                        <input type="text" class="form-field" placeholder="Full Name *" />
+                        <input type="email" class="form-field" placeholder="Email Address *" />
+                        <select class="form-field">
+                            <option>Select a topic</option>
+                        </select>
+                        <textarea class="form-field" rows="4" placeholder="Message *"></textarea>
+                        <label><input type="checkbox"> Subscribe to newsletter</label><br><br>
+                        <button style="background: #3498db; color: white; padding: 10px 20px; border: none;">Send Message</button>
+                    </div>
+                </div>
+                <div class="sidebar-box">
+                    <h4>Contact Information</h4>
+                    <p><strong>Address:</strong><br>123 Education Street<br>Learning City, LC 12345</p>
+                    <p><strong>Phone:</strong><br>(555) 123-4567</p>
+                    <p><strong>Email:</strong><br>info@edulearn.com</p>
+                    <h4>Office Hours</h4>
+                    <table style="width: 100%; font-size: 12px;">
+                        <tr><td>Mon-Fri</td><td>9AM-6PM</td></tr>
+                        <tr><td>Saturday</td><td>10AM-4PM</td></tr>
+                        <tr><td>Sunday</td><td>Closed</td></tr>
+                    </table>
+                </div>
+            </div>
+            <div class="content-box">
+                <h4>Frequently Asked Questions</h4>
+                <div class="grid">
+                    <div class="grid-item">How to enroll?</div>
+                    <div class="grid-item">Refund policy?</div>
+                    <div class="grid-item">Certificates?</div>
+                    <div class="grid-item">Mobile access?</div>
+                </div>
+            </div>
+            <div class="footer-box">Footer with Contact Info & Links</div>
+        </div>
+
+        <!-- Responsive Design Notes -->
+        <div class="wireframe">
+            <h3>Responsive Design Breakpoints</h3>
+            <div class="content-box">
+                <h4>Mobile (< 768px)</h4>
+                <ul>
+                    <li>Navigation collapses to hamburger menu</li>
+                    <li>Grid layouts become single column</li>
+                    <li>Contact form and sidebar stack vertically</li>
+                    <li>Image slider maintains aspect ratio</li>
+                </ul>
+            </div>
+            <div class="content-box">
+                <h4>Tablet (768px - 1024px)</h4>
+                <ul>
+                    <li>2-column grid layouts where appropriate</li>
+                    <li>Navigation remains horizontal</li>
+                    <li>Tables may scroll horizontally if needed</li>
+                </ul>
+            </div>
+            <div class="content-box">
+                <h4>Desktop (> 1024px)</h4>
+                <ul>
+                    <li>Full multi-column layouts</li>
+                    <li>Maximum container width of 1200px</li>
+                    <li>Hover effects on interactive elements</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
