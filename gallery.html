@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery - EduLearn</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="nav-logo">
+            <h2>EduLearn</h2>
+          </div>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="courses.html" class="nav-link">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a href="gallery.html" class="nav-link active">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <div class="nav-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-header">
+        <div class="container">
+          <h1>Gallery</h1>
+          <p>Explore our vibrant learning community and campus life</p>
+        </div>
+      </section>
+
+      <section class="gallery-content">
+        <div class="container">
+          <div class="gallery-intro">
+            <h2>Our Learning Environment</h2>
+            <p>
+              Take a visual journey through EduLearn's dynamic learning
+              environment. From virtual classrooms to student success stories,
+              these images showcase the vibrant community that makes our
+              platform special.
+            </p>
+          </div>
+
+          <div class="gallery-grid">
+            <div class="gallery-item">
+              <a
+                href="images/gallery/large/virtual-classroom.jpg"
+                class="gallery-link"
+                onclick="openModal(this.href, 'Virtual Classroom Session', 'Students participating in an interactive online class with real-time collaboration tools'); return false;"
+              >
+                <img
+                  src="images/gallery/thumbs/virtual-classroom-thumb.jpg"
+                  alt="Virtual classroom session with students and instructor"
+                />
+                <div class="gallery-overlay">
+                  <h3>Virtual Classroom</h3>
+                  <p>Interactive online learning sessions</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="gallery-item">
+              <a
+                href="images/gallery/large/study-group.jpg"
+                class="gallery-link"
+                onclick="openModal(this.href, 'Study Group Collaboration', 'Students working together on group projects using collaborative online tools'); return false;"
+              >
+                <img
+                  src="images/gallery/thumbs/study-group-thumb.jpg"
+                  alt="Students collaborating in online study group"
+                />
+                <div class="gallery-overlay">
+                  <h3>Study Groups</h3>
+                  <p>Collaborative learning experiences</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="gallery-item">
+              <a
+                href="images/gallery/large/coding-workshop.jpg"
+                class="gallery-link"
+                onclick="openModal(this.href, 'Coding Workshop', 'Programming workshop with hands-on coding exercises and instructor guidance'); return false;"
+              >
+                <img
+                  src="images/gallery/thumbs/coding-workshop-thumb.jpg"
+                  alt="Programming workshop with students coding"
+                />
+                <div class="gallery-overlay">
+                  <h3>Coding Workshops</h3>
+                  <p>Hands-on programming sessions</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="gallery-item">
+              <a
+                href="images/gallery/large/graduation-ceremony.jpg"
+                class="gallery-link"
+                onclick="openModal(this.href, 'Virtual Graduation', 'Online graduation ceremony celebrating student achievements and course completions'); return false;"
+              >
+                <img
+                  src="images/gallery/thumbs/graduation-ceremony-thumb.jpg"
+                  alt="Virtual graduation ceremony for course completions"
+                />
+                <div class="gallery-overlay">
+                  <h3>Graduation Ceremony</h3>
+                  <p>Celebrating student achievements</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="gallery-item">
+              <a
+                href="images/gallery/large/design-studio.jpg"
+                class="gallery-link"
+                onclick="openModal(this.href, 'Design Studio', 'Creative design workshop with students working on graphic design projects'); return false;"
+              >
+                <img
+                  src="images/gallery/thumbs/design-studio-thumb.jpg"
+                  alt="Design studio with creative projects"
+                />
+                <div class="gallery-overlay">
+                  <h3>Design Studio</h3>
+                  <p>Creative arts and design courses</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="gallery-item">
+              <a
+                href="images/gallery/large/business-seminar.jpg"
+                class="gallery-link"
+                onclick="openModal(this.href, 'Business Seminar', 'Professional development seminar with industry experts sharing insights'); return false;"
+              >
+                <img
+                  src="images/gallery/thumbs/business-seminar-thumb.jpg"
+                  alt="Business seminar with professional speakers"
+                />
+                <div class="gallery-overlay">
+                  <h3>Business Seminars</h3>
+                  <p>Professional development sessions</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="gallery-item">
+              <a
+                href="images/gallery/large/student-success.jpg"
+                class="gallery-link"
+                onclick="openModal(this.href, 'Student Success Stories', 'Diverse group of successful graduates sharing their learning journey experiences'); return false;"
+              >
+                <img
+                  src="images/gallery/thumbs/student-success-thumb.jpg"
+                  alt="Successful students sharing their experiences"
+                />
+                <div class="gallery-overlay">
+                  <h3>Success Stories</h3>
+                  <p>Our graduates making a difference</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="gallery-item">
+              <a
+                href="images/gallery/large/tech-lab.jpg"
+                class="gallery-link"
+                onclick="openModal(this.href, 'Technology Lab', 'Advanced technology lab with students working on AI and machine learning projects'); return false;"
+              >
+                <img
+                  src="images/gallery/thumbs/tech-lab-thumb.jpg"
+                  alt="Technology lab with advanced equipment"
+                />
+                <div class="gallery-overlay">
+                  <h3>Tech Lab</h3>
+                  <p>Cutting-edge technology courses</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="gallery-stats">
+            <h3>Our Community in Numbers</h3>
+            <div class="stats-grid">
+              <div class="stat-item">
+                <h4>45,000+</h4>
+                <p>Active Students</p>
+              </div>
+              <div class="stat-item">
+                <h4>50+</h4>
+                <p>Countries Represented</p>
+              </div>
+              <div class="stat-item">
+                <h4>112</h4>
+                <p>Expert Instructors</p>
+              </div>
+              <div class="stat-item">
+                <h4>89%</h4>
+                <p>Student Satisfaction</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="cta-section">
+            <h3>Ready to Join Our Community?</h3>
+            <p>
+              Become part of our vibrant learning community and start your
+              educational journey today.
+            </p>
+            <a href="courses.html" class="btn-primary">Browse Courses</a>
+            <a href="contact.html" class="btn-outline">Contact Us</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Modal for enlarged images -->
+    <div id="imageModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImage" src="" alt="" />
+        <div class="modal-caption">
+          <h3 id="modalTitle"></h3>
+          <p id="modalDescription"></p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>EduLearn</h3>
+            <p>
+              Empowering learners worldwide through innovative online education.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4>Contact Info</h4>
+            <p>
+              Dhangadhi, Nepal<br />
+              Chtakapur <br>
+              Phone: <a href="tel:+ +977 9842241189">+977 9842241189 </a>
+            </p>
+
+            <p>
+              Email: <a href="mailto:rprayash25@tbc.edu.np">rprayash25@tbc.edu.np</a>
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="courses.html">Courses</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li>
+                <a href="https://www.edx.org" target="_blank"
+                  >External Learning</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 EduLearn. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
