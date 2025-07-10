@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduLearn - Online Learning Platform</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="nav-logo">
+            <h2>EduLearn</h2>
+          </div>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="courses.html" class="nav-link">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a href="gallery.html" class="nav-link">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <div class="nav-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Image Slider Section -->
+      <section class="slider-section">
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide active">
+              <img
+                src="images/slide1.jpg"
+                alt="Students learning online with laptops"
+              />
+              <div class="slide-content">
+                <h1>Welcome to EduLearn</h1>
+                <p>
+                  Discover the future of online education with our comprehensive
+                  learning platform
+                </p>
+                <a href="courses.html" class="btn-primary">Explore Courses</a>
+              </div>
+            </div>
+            <div class="slide">
+              <img
+                src="images/slide2.jpg"
+                alt="Interactive online classroom session"
+              />
+              <div class="slide-content">
+                <h1>Interactive Learning</h1>
+                <p>
+                  Engage with expert instructors and fellow students in our
+                  virtual classrooms
+                </p>
+                <a href="about.html" class="btn-primary">Learn More</a>
+              </div>
+            </div>
+            <div class="slide">
+              <img
+                src="images/slide3.jpg"
+                alt="Diverse group of students studying together"
+              />
+              <div class="slide-content">
+                <h1>Join Our Community</h1>
+                <p>
+                  Connect with learners from around the world and expand your
+                  knowledge
+                </p>
+                <a href="contact.html" class="btn-primary">Get Started</a>
+              </div>
+            </div>
+          </div>
+          <div class="slider-nav">
+            <button class="prev-btn" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next-btn" onclick="changeSlide(1)">&#10095;</button>
+          </div>
+          <div class="slider-dots">
+            <span class="dot active" onclick="goToSlide(1)"></span>
+            <span class="dot" onclick="goToSlide(2)"></span>
+            <span class="dot" onclick="goToSlide(3)"></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Welcome Section -->
+      <section class="welcome-section">
+        <div class="container">
+          <h2>Transform Your Future with Online Learning</h2>
+          <p>
+            At EduLearn, we believe that education should be accessible to
+            everyone, everywhere. Our cutting-edge online learning platform
+            offers a wide range of courses designed to help you achieve your
+            personal and professional goals.
+          </p>
+
+          <div class="features-grid">
+            <div class="feature-card">
+              <h3>Expert Instructors</h3>
+              <p>
+                Learn from industry professionals and academic experts who bring
+                real-world experience to every lesson.
+              </p>
+            </div>
+            <div class="feature-card">
+              <h3>Flexible Schedule</h3>
+              <p>
+                Study at your own pace with 24/7 access to course materials and
+                recorded lectures.
+              </p>
+            </div>
+            <div class="feature-card">
+              <h3>Interactive Content</h3>
+              <p>
+                Engage with multimedia content, quizzes, and hands-on projects
+                that enhance your learning experience.
+              </p>
+            </div>
+          </div>
+
+          <div class="cta-section">
+            <h3>Ready to Start Learning?</h3>
+            <p>
+              Join thousands of students who have already transformed their
+              careers with EduLearn.
+            </p>
+            <a href="courses.html" class="btn-secondary">Browse Courses</a>
+            <a
+              href="https://www.coursera.org"
+              target="_blank"
+              class="btn-outline"
+              >Explore External Resources</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>EduLearn</h3>
+            <p>
+              Empowering learners worldwide through innovative online education.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4>Contact Info</h4>
+            <p>
+              Dhangadhi, Nepal<br />
+              Chatakpur<br />
+              Phone: <a href="tel:+977 9842241189">+977 9842241189</a>
+            </p>
+            <p>
+              Email: <a href="mailto:rprayash25@tbc.edu.np">rprayash25.tbc.edu.np</a>
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="courses.html">Courses</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li>
+                <a href="https://www.edx.org" target="_blank"
+                  >External Learning</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 EduLearn. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
